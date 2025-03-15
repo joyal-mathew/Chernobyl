@@ -1,5 +1,5 @@
-// import React, { useState, useEffect, useCallback } from './react';
-// import ReactDOM from './react-dom/client';
+// import React, { useState, useEffect, useCallback } from 'react';
+// import ReactDOM from 'react-dom/client';
 
 const { useState, useEffect, useCallback } = React;
 
@@ -35,7 +35,7 @@ const gameScenes = {
   },
   manualOverride: {
     text: "The manual override is risky but might work. You need to choose the correct sequence.",
-    choices: [{ text: "Sequence: Cool → Vent → Power", nextScene: "success" }, { text: "Sequence: Power → Cool → Vent", nextScene: "death" }, { text: "Sequence: Vent → Power → Cool", nextScene: "death" }]
+    choices: [{ text: "Sequence: Cool → Vent → Power", nextScene: "technicalSuccess" }, { text: "Sequence: Power → Cool → Vent", nextScene: "death" }, { text: "Sequence: Vent → Power → Cool", nextScene: "death" }]
   },
   backupSystem: {
     text: "You discover the backup system was sabotaged! There's evidence of tampering.",
@@ -43,7 +43,7 @@ const gameScenes = {
   },
   shutdown: {
     text: "Emergency shutdown initiated. The reactor is powering down but cooling is still critical.",
-    choices: [{ text: "Monitor the shutdown process", nextScene: "success" }, { text: "Leave the facility", nextScene: "evacuation" }]
+    choices: [{ text: "Monitor the shutdown process", nextScene: "heroicSuccess" }, { text: "Leave the facility", nextScene: "evacuation" }]
   },
   security: {
     text: "Security arrives but precious time has been lost. The reactor temperature is now critical.",
